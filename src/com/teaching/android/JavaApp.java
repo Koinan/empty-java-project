@@ -7,16 +7,16 @@ public class JavaApp {
 
     public static void main(String[] args) {
 
-        byte b=65; // 8 bits.
+        byte h=65; // 8 bits. puedo poner la letra que quiera (b por h en este caso)
         char c='A'; //16 bits.
-        short s=65; //16 bits.
+        short s=30; //16 bits. el número se lo indico yo
         int i=65; //32 bits.
-        long l=65L; //64 bits.
-        float f=65f; //32 bits.
-        double d=65.55; //64 bits.
-        boolean bol= true; //1 bit
+        long l=6555555L; //64 bits.
+        float f=6.77f; //32 bits. float necesita terminar en f por ser de 32 bits
+        double d=65.78; //64 bits. no necesita letra
+        boolean bol= false; //1 bit
 
-        System.out.println(b);
+        System.out.println(h);
         System.out.println(c);
         System.out.println(s);
         System.out.println(i);
