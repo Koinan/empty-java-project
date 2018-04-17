@@ -1,30 +1,34 @@
 package com.teaching.android;
 
+import java.util.Random;
+import java.util.Scanner;
+
 /**
  * Empty Java App for teaching purposes.
  */
 public class JavaApp {
 
     public static void main(String[] args) {
+        Random generator = new Random();
+        int random = generator.nextInt(10) + 1;
 
-        byte b=65; // 8 bits.
-        char c='A'; //16 bits.
-        short s=65; //16 bits.
-        int i=65; //32 bits.
-        long l=65L; //64 bits.
-        float f=65f; //32 bits.
-        double d=65.55; //64 bits.
-        boolean bol= true; //1 bit
+        Scanner keyboard = new Scanner(System.in);
+        int  valor = keyboard.nextInt();
 
-        System.out.println(b);
-        System.out.println(c);
-        System.out.println(s);
-        System.out.println(i);
-        System.out.println(l);
-        System.out.println(f);
-        System.out.println(d);
-        System.out.println(bol);
+
+        do   {
+            if (valor > random) {
+                System.out.println("menor");
+            } else if (valor < random) {
+                System.out.println("mayor");
+            } else {
+                System.out.println("has ganado");
+            }
+            valor = keyboard.nextInt();
+        }
+        while (valor != random);
+        System.out.println("Has ganado");
+
 
     }
-
 }
