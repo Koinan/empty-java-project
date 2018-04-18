@@ -7,11 +7,11 @@ public class JavaApp {
 
     public static void main(String[] args) {
 
-    int i = 0;
+    int [] primos = {2, 3, 5, 7, 11 };
+    for (int primo : primos) {
+        System.out.println(primo);
+    }
 
-        for (i = 0; i < 20 +1; i++) {
-            if (i % 2 == 0){
-                System.out.println(i);
             }
         }
     }
