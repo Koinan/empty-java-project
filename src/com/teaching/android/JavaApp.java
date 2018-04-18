@@ -14,20 +14,25 @@ public class JavaApp {
 
     Scanner keyboard = new Scanner(System.in);
     int  valor = keyboard.nextInt();
+    int fail = 0;
 
 
         do   {
         if (valor > random) {
             System.out.println("menor");
+            fail++;
         } else if (valor < random) {
             System.out.println("mayor");
-        } else {
+            fail++;
+        } else if (valor == random) {
             System.out.println("has ganado");
-            }
-            valor = keyboard.nextInt();
+            System.exit(0);
         }
-        while (valor != random);
-        System.out.println("Has ganado");
+            valor = keyboard.nextInt();
+
+        }
+        while (fail < 2);
+        System.out.println("  3 intentos usados" );
 
 
     }
