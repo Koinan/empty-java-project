@@ -35,11 +35,13 @@ public class Circulo {
     public double getArea (int radio) {
     double Area = Math.PI * Math.pow(radio, 2);
     return Area;
+        //return Math.PI * Math.pow(radio, 2);
     }
 
     public double getCircumference(int radio) {
-        double Circumferencia = Math.PI * Math.pow(radio, 2);
-        return Circumferencia;
+        // double Circumferencia = Math.PI * Math.pow(radio, 2);
+        return 2 * Math.PI * radio;
+
 
     }
 
