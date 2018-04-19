@@ -2,8 +2,9 @@ package com.teaching.android;
 
 
 public class Persona {
+    //Atributos
     private String nombre;
-    private Float dinero;
+    private float dinero;
 
     //Constructor
     public Persona(String nombre, float dinero) {
